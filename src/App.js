@@ -9,7 +9,7 @@ import {
   calculateTotals,
   getCartItems,
 } from "./features/folder/cart/cartSlice";
-
+import "./base.scss";
 function App() {
   const { cartItems, isLoading } = useSelector((store) => store.cart);
   const { isOpen } = useSelector((store) => store.modal);
@@ -31,7 +31,7 @@ function App() {
     );
   }
   return (
-    <main>
+    <main className="main">
       {isOpen && <Modal />}
       <Navbar />
       <CartContainer />

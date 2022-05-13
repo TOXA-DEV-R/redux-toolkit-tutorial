@@ -1,0 +1,8 @@
+@use './styles/foundation/code';
+@use './styles/foundation/lists';
+@use './styles/foundation/corners'as c;
+
+nav {
+    @include c.rounded;
+    padding: 5px + c.$radius;
+}
